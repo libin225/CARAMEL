@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .about{
+            
+           text-align: center; 
+           
+          color: black;
+          background-color:white;
+          position: relative;
+          top:-2500px;
+          width: 1280px;
+          left: 25px;
+          height: 2460px;
+          border-radius: 50px;
+          
+          
+           
+        }
+        .US{
+            position: relative;
+            top: 50px;
+            color: rgb(1, 51, 51);
+        }
+      
+        html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        margin-bottom: 0;
+     }
+     .the{
+        margin-left: 950px;
+        margin-top: 50px;
+        font-size: 30px;
+        color: rgb(1, 46, 46);
+     }
+     .color{
+        margin-top: 39px;
+        width: 1333px;
+        margin-left:-28px;
+        border-radius: 20px;
+     }
+     .chicken{
+        width:500px;
+        height: 500px;
+        position: relative;
+        left: 300px;
+        top: -400px;
+        border-radius: 30px;
+     }
+     ul{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        z-index: 1;
+        list-style-type: none;
+      }
+      ul li{
+        margin: 0 20px;
+        position: relative;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        transition: color 0.3s;
+      }
+      ul li{
+        position: relative;
+        
+      }
+      a:hover{
+        color: gray;
+      }
+      
+     
+     
+     
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'menu' %}">Menu</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'booking' %}">Booking</a></li>
+      </ul>
+      <h1 style="margin-top: -80px; margin-left: 50px; font-style: italic; font-size: 50px; color: rgb(1, 49, 49);">CARAMEL</h1>
+      
+
+    <img src="{% static 'images/teal.avif' %}" style="width: 1330px; height:2500px; margin-top: -30px; ">
+    <div class="about">
+        <p class="US">ABOUT US</p>
+        <h1 style="margin-top: 80px; font-style: italic; color: rgb(2, 54, 54); font-size: 50px;">The Story of <br>Caramel Stories Bar & Grill</h1>
+        <p style="font-size: 18px; color: gray;">Caramel Stories Bar and Grill is Garnalwood's latest Sports Bar.Bringing you a fusion of india cusine, mixed with a bar like atmosphere and showing all the<br>
+        live sports.</p>
+        <p style="font-size: 18px; color: grey;">Our Caramel journey begins years aga with a family holiday to India. Whilst there we went to a stall on the acner of a street where a man was serving tea.<br>
+        People kept calling him. Caramel-wallah; we have all heard the term Chai ___ wallah ( meaning someone who serves tea ) but this was a new one for me.<br>
+        There was no dress code, no division people of all walks at like were ther, just enjoying this delicious cup of chai.</p>
+        <p style="font-size: 18px; color: gray;">This is the essence of what we want Caramel to be. Not just your typical bar or a restaurant but a place where everyone can come and enjoy,families and <br>friends alike. </p>
+        <p style="font-size: 18px; color: gray;">Since that holoday we have apened several coffee shops under the Caramel Banner over the last 10 and now out of the ashes of this pandemic the world has<br>
+        endured we are changing our hand at bringing you the provebial phoenix that is Caramel Stories Bar and Grill.</p>
+        <img src="{% static 'images/cafe.avif' %}" style="width: 1050px; border-radius: 20px;">
+        <h5 style="color: rgb(0, 37, 37); font-size:25 px; margin-top: 30px;">FEATURES</5>
+        <h1 style="color: rgb(2, 54, 54); font-size: 50px;">Why people choose us?</h1>
+        <p style="font-size: 18px; color: gray;">There's too much to mention but heres a select few.</p>
+         <img src="{% static 'images/sports.avif' %}" style="width: 80px; margin-right: 1000px; margin-top: 50px;">
+         <h4 style="color: rgb(2, 54, 54); margin-right: 980px; font-size: 25px;">Sports Bar</h4>
+         <p style="margin-right: 790px; color: grey;">Showing live sports on BT and Sky Sports,we've</p>
+         <p style="margin-right: 1045px; color: grey;">got it all!</p>
+         <img src="{% static 'images/chef.jpg' %}" style="width: 130px;position: relative; top: -255px; right: 18px;">
+         <h4 style="margin-top: -240px; font-size: 25px; color: rgb(2, 54, 54);">Authentic North Indian Cuisine</h4>
+         <p style="margin-right: 20px; color: gray;">Combining fragrant spaces spices with the unique</p>
+         <p style="margin-right: 40px; color: grey;">recipes made by our chefs who have a passion</p>
+         <p style="margin-right: 155px; color: gray;">for food from their heritage</p>
+         <img src="{% static 'images/cocktails.avif' %}" style="width: 100px; position: relative; left: 420px; top: -280px;">
+        <h4 style=" margin-top: -270px; margin-left: 845px; font-size: 25px; color: rgb(2, 54, 54); ">Cocktails & Mocktails</h4>
+        <p style="margin-left: 890px; color: gray;">We cater for everyone with our freshly made</p>
+        <p style="margin-left:660px; color: grey;">cocktails</p>
+        <img src="{% static 'images/food.jpg' %}" style="width: 850px; position: relative; top: 180px; right:120px; border-top-left-radius: 30px;">
+        <h5 style="margin-left: 950px; margin-top: -358px; font-size: 20px; color: rgb(1, 31, 31); ">Monday - Thursday</h5>
+        <h5 style="margin-left: 950px; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(1, 31, 31); margin-top: -20px;">11:00 am <br> 11:00 pm</h5>
+        <p style="margin-left: 950px; margin-top: -20px; color: rgb(78, 77, 77);">Kitchen Close 10:30 pm</p>
+        <h5 style="margin-left: 950px; margin-top: 20px; font-size: 20px; color: rgb(1, 31, 31);" >Friday - Saturday</h5>
+        <h5 style="margin-left: 950px;margin-top: -20px; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(1, 31, 31);">11:00 am <br> 12:00 am</h5>
+        <p style="margin-left: 950px;  color: rgb(78, 77, 77); margin-top: -20px;">Kitchen Close 11:30 pm</p>
+        <h5 style=" margin-left: 950px; font-size: 23px; color: rgb(1, 31, 31);">Sunday</h5>
+        <h5 style=" margin-left:950px; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(1, 31, 31); margin-top: -30px;">11:00 am <br> 11:00 pm</h5>
+        <p style="margin-left: 950px; color: rgb(78, 77, 77); margin-top: -25px;">Kitchen Close 10:30 pm</p>
+        <h4 class="the">Enjoy The Food !</h4>
+        <img src="{% static 'images/teal.avif' %}" class="color">
+        <h5 style="margin-top: -700px; margin-right:800px; color: white; font-size: 30px; text-decoration-line: underline;">RESERVATION</h5>
+        <h1 style="margin-right: 750px; font-size: 100px; color: white;">Eat in or<br>
+        
+        Take Out!</h1>
+        <h3 style="margin-right: 720px; color: white; font-size: 30px;margin-top: -50px;">No need to book, just come on in !</h3>
+        <img src="{% static 'images/chickengrill.avif' %}" class="chicken" style="margin-bottom: -220px;">
+     
+        
+    </div>
+       
+      
+   
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        overflow-x: hidden;
+      
+      }
+         ul{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        z-index: 1;
+        list-style-type: none;
+      }
+      ul li{
+        margin: 0 20px;
+        position: relative;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        transition: color 0.3s;
+      }
+      ul li{
+        position: relative;
+        
+      }
+      a:hover{
+        color: gray;
+      }
+      
+      .Menu{
+        text-align: center; 
+           
+          color: black;
+          background-color:white;
+          position: relative;
+          top:-2500px;
+          width: 1280px;
+          left: 25px;
+          height: 2460px;
+          border-radius: 50px;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hi;
+      }
+      .p{
+        font-size: 18px;
+        position: relative;
+        top: 50px;
+        color: grey;
+      }
+      .note{
+        font-size: 18px;
+        color: grey;
+      }
+      .Meat{
+        margin-right:920px;
+        margin-top: -180px;
+        color: rgb(2, 104, 104);
+      }
+      .lollipop{
+        width: 250px;
+        position: relative;
+        right: 470px;
+      }
+      .mixed{
+        margin-top: -520px;
+        margin-right: 530px;
+        font-size: 22px;
+        color: rgb(2, 104, 104);
+      }
+      .tikka{
+        width: 350px;
+        position: relative;
+        right: 140px;
+      }
+      .sauce{
+        width: 220px;
+        position: relative;
+        left: 200px;
+        top: -1350px;
+      }
+      .curry{
+        width: 250px;
+        position: relative;
+        left: 220px;
+      }
+      .rs{
+        position: relative;
+        top: -39px;
+      }
+      .last{
+       position: relative;
+       top: 300px;
+       left: 340px;
+       width: 500px;
+       height: 1009px;
+      }
+      .grill{
+        background-color: rgb(3, 34, 34);
+        width: 400px;
+        position: relative;
+        left: 800px;
+        height: 800px;
+        top: -125px;
+      }
+      .stories{
+        position: relative;
+        top: -650px;
+        left: 350px;
+        font-size: 40px;
+        font-style: italic;
+        color: white;
+        
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hi;
+      }
+      
+      .vegbiriyani{
+        width: 100px;
+        position: relative;
+        right: 450px;
+      }
+      .tandoori{
+        width: 100px;
+        position: relative;
+        right:430px;
+      }
+      .chips{
+        width: 300px;
+        position: relative;
+        top: -800px;
+        right:80px ;
+        border-radius: 20px;
+
+      }
+      
+      
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'menu' %}">Menu</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'booking' %}">Booking</a></li>
+      </ul> 
+      <h1 style="margin-top: -80px; margin-left: 50px; font-style: italic; font-size: 50px; color: rgb(1, 49, 49);">CARAMEL</h1>
+     
+      <img src="{% static 'images/teal.avif' %}" style="width: 1330px; height:2500px; margin-top: -30px; ">
+      <div class="Menu">
+        <p class="p">Menu prices accurate at time of upload and may be liable to change .Please see in restaurant for latest menu prices. </p>
+        <h4 style="margin-top:80px; color:rgb(0, 37, 37); font-size: 20px;">MAY CONTAIN ALLERGENS.</h4>
+        <p class="note">Please Note: While we do our best to reduce the risk of cross-contamintain in our restaurants, we CANNOT guarantee that any of our dishes are<br>
+        free from allergens and therefore cannot accept any liability in this respect.Guests with servere allergies are advised.<br>
+      to assess their own level of risk and consume dishes at their own risk.</p>
+      <h3 style="margin-right: 1000px; margin-top: 50px; color: rgb(8, 104, 4); font-size: 25px;">Veg it up</h3>
+      <p style="margin-right:1004px ; color:rgb(2, 126, 23); font-size: 20px;">Poppadoms</p>
+      <p style="margin-right: 800px; margin-top: -38px;">Rs.80</p>
+      <p style="margin-right:1004px ; color:rgb(2, 126, 23); font-size: 20px;">Onion Bhaji</p>
+      <p style="margin-right: 800px; margin-top: -38px;">Rs.30</p>
+      <p style="margin-right:1004px ; color:rgb(2, 126, 23); font-size: 20px;">Veg Samosa</p>
+      <p style="margin-right: 800px; margin-top: -38px;">Rs.70</p>
+      <p style="margin-right:1004px ; color:rgb(2, 126, 23); font-size: 20px;">Paneer Tikka</p>
+      <p style="margin-right: 800px; margin-top: -38px;">Rs.100</p>
+      <p style="margin-right:930px; color: gray;">____________________________</p>
+      <h4 style="margin-right: 554px; margin-top: -267px; font-size: 25px; color: rgb(2, 104, 104);">Biryani</h4>
+      <p style="margin-right:505px; color: rgb(1, 48, 48); font-size: 20px;">Chicken Biryani</p>
+      <p style="margin-right:420px ; font-size: 13px;">Boneless chicken cooked with long grain<br>basmati rice</p>
+      <p style="margin-right:520px; color: rgb(1, 48, 48); font-size: 20px;">Lamb Biryani</p>
+      <p style="margin-right:410px ; font-size: 13px;">Lamb cooked with long grain basmati rice</p>
+      <p style="margin-right:535px; color: rgb(1, 48, 48); font-size: 20px;">Veg Biryani</p>
+      <p style="margin-right:420px ; font-size: 13px;">Fresh vegetables cooked with long grain<br>basmati rice</p>
+      <p style="margin-right:515px; color: rgb(1, 48, 48); font-size: 20px;">Prawn Biryani</p>
+      <p style="margin-right:425px ; font-size: 13px;">Prawns cooked with long grain basmati</p>
+      <p style="margin-top:-337px ;">Rs.150</p>
+      <p style="margin-top: 75px;">Rs.180</p>
+      <p style="margin-top: 63px;">Rs.120</p>
+      <p style="margin-top: 75px;">Rs.250</p>
+      <p style="margin-top: 50px; margin-right: 267px; color: grey;">__________________________________________________</p>
+      <h3 class="Meat">Is it Meat you're looking for?</h3>
+      <p style="margin-right:1070px; color: rgb(1, 48, 48); font-size: 20px;">Chicken Wings</p>
+      <p style="margin-right: 780px; margin-top:-40px ">Rs.150</p>
+      <p style="margin-right:1075px; color: rgb(1, 48, 48); font-size: 20px;">Chicken Tikka</p>
+      <p style="margin-right: 780px; margin-top:-40px ">Rs.200</p>
+      <p style="margin-right:1025px; color: rgb(1, 48, 48); font-size: 20px;">Chicken Malai Tikka</p>
+      <p style="margin-right: 780px; margin-top:-40px ">Rs.250</p>
+      <p style="margin-right:1075px; color: rgb(1, 48, 48); font-size: 20px;">Sheesh Kebab</p>
+      <p style="margin-right: 780px; margin-top:-40px ">Rs.300</p>
+      <p style="margin-right:1080px; color: rgb(1, 48, 48); font-size: 20px;">Lamb Chops</p>
+      <p style="margin-right: 780px; margin-top:-40px ">Rs.400</p>
+      <p style="margin-right:1085px; color: rgb(1, 48, 48); font-size: 20px;">Fish Pakora</p>
+      <p style="margin-right: 780px; margin-top:-40px ">Rs.350</p>
+      <img src="{% static 'images/lollipop.avif' %}" class="lollipop">
+      <p style="margin-right:1025px; color: rgb(1, 48, 48); font-size: 20px;">Tapri Crispy Wings</p>
+      <p style="margin-right: 780px; margin-top:-40px ">Rs.220</p>
+      <p style="margin-right: 1020px;">Mainated overnight and <br> crisped to perfection</p>
+      <p style="margin-right:1035px; color: rgb(1, 48, 48); font-size: 20px;">Chicken Lollipop</p>
+      <p style="margin-right: 780px; margin-top:-40px ">Rs.220</p>
+      <p style="margin-right:950px;">Chicken niblets marinated in house<br> spices  and tossed in our red sauce </p>
+      <p style="margin-right: 950px; color: gray;">_____________________________________</p>
+      <h4 class="mixed">Mixed Grill</h4>
+      <p style="margin-right: 495px; font-size: 18px; color: rgb(1, 48, 48);">Individual Mix Grill</p>
+      <p style="margin-top: -36px;">Rs.450</p>
+      <p style="margin-right: 345px;">Chicken tikka, Chicken wings & sheesh kebab</p>
+      <p style="margin-right: 510px; font-size: 18px; color: rgb(1, 48, 48);">Regular Mix Grill</p>
+      <p style="margin-top: -36px;">Rs.650</p>
+      <p style="margin-right: 365px;">Chicken tikka, chicken wingd,lamb sheesh<br>kebab & fish pakora </p>
+      <p style="margin-right: 525px; font-size: 18px; color: rgb(1, 48, 48);">Large Mix Grill</p>
+      <p style="margin-top: -36px;">Rs.750</p>
+      <p style="margin-right: 365px;">Chicken tikka, chicken wingd,lamb sheesh<br>kebab & fish pakora,lamb chops & fish pakora </p>
+      <p style="margin-right: 500px; font-size: 18px; color: rgb(1, 48, 48);">Boneless Mix Grill</p>
+      <p style="margin-top: -36px;">Rs.850</p>
+      <p style="margin-right: 330px;">Chicken tikka, chicken malai tikka,sheesh kebab <br> & fish pakora</p>
+      <img src="{% static 'images/tikka.avif' %}" class="tikka">
+      <p style="margin-right: 300px; color: gray;">________________________________________________________</p>
+      <img src="{% static 'images/sauce 2.avif' %}" class="sauce">
+      <h4 style="margin-left: 390px; margin-top: -1330px; font-size: 25px; color: rgb(2, 104, 104);">Curry up & order</h4>
+      <p style="margin-left: 250px; font-size: 20px; color: rgb(1, 48, 48);">Curry </p>
+      <p style="margin-left: 410px;">Ultimate simple curry.No cream,<br>no fuss....simply beautiful</p>
+      
+      <p style="margin-left: 250px; font-size: 20px; color: rgb(1, 48, 48);">Balti </p>
+      <p style="margin-left: 350px;">Pride of Birmingham!</p>
+      <p style="margin-left: 265px; font-size: 20px; color: rgb(1, 48, 48);">Madras </p>
+      <p style="margin-left: 405px;">Hot and spicy.This packs a good<br> punch</p>
+      <p style="margin-left: 278px; font-size: 20px; color: rgb(1, 48, 48);">Vindaloo </p>
+      <p style="margin-left: 430px;">Hotter and even spicer reality tasty</p>
+      <p style="margin-left: 278px; font-size: 20px; color: rgb(1, 48, 48);">Jalfrezi </p>
+      <p style="margin-left: 445px;">Spicy onion sauce studded with stir-<br>fried peppers and onions</p>
+      <p style="margin-left: 270px; font-size: 20px; color: rgb(1, 48, 48);">Bhuna </p>
+      <p style="margin-left: 445px;">Medium heat curry with thick tomato,<br>chilli and onion sauce seasoned indian<br>spices.</p>
+      <p style="margin-left: 265px; font-size: 20px; color: rgb(1, 48, 48);">Saag </p>
+      <p style="margin-left: 445px;">A classic punjabi dish.Prepared with<br>mustard leaves and spinach</p>
+      <p style="margin-left: 275px; font-size: 20px; color: rgb(1, 48, 48);">Karahi </p>
+      <p style="margin-left: 445px;">Flavourful and spicy.made with ginger.<br>garic,tomatoes,onion &mixed peppers</p>
+      <img src="{% static 'images/curry.avif' %}" class="curry">
+      <h4 style="margin-left: 805px; margin-top: -1170px; font-size: 25px; color: rgb(2, 104, 104);">Classics</h4>
+      <p style="margin-left: 850px; font-size: 20px;">Butter Chicken</p>
+      <p style="margin-left: 1175px;" class="rs">Rs.150</p>
+      <p style="margin-left: 900px; font-size: 20px; margin-top: -40px;">Chicken Tikka Masala</p>
+      <p style="margin-left: 1175px;" class="rs">Rs.150</p>
+      <p style="margin-left: 850px; font-size: 20px; margin-top: -40px;">Chicken Korma</p>
+      <p style="margin-left: 1175px;" class="rs">Rs.150</p>
+      <p style="margin-left: 850px; font-size: 20px; margin-top: -40px;"> Methi Chicken</p>
+      <p style="margin-left: 1175px;" class="rs">Rs.150</p>
+      <p style="margin-left: 865px; font-size: 20px; margin-top: -40px;"> Lamb Rogan Josh</p>
+      <p style="margin-left: 1175px;" class="rs">Rs.150</p>
+      <p style="margin-left: 835px; font-size: 20px; margin-top: -40px;"> Patiala Lamb</p>
+      <p style="margin-left: 1175px;" class="rs">Rs.150</p>
+      <p style="margin-left: 825px; font-size: 20px; margin-top: -40px;"> Desi Lamb</p>
+      <p style="margin-left: 1175px;" class="rs">Rs.150</p>
+      <p style="margin-left: 835px; font-size: 20px; margin-top: -40px;">Keema Peas</p>
+      <p style="margin-left: 1175px;" class="rs">Rs.150</p>
+      <p style="margin-left: 835px; font-size: 20px; margin-top: -40px;">Lamb Rara</p>
+      <p style="margin-left: 1175px;" class="rs">Rs.150</p>
+      <p style="margin-left: 980px; margin-top: -50px; color: gray;">___________________________________</p>
+      <p style="margin-top: 780px; margin-left: 450px; color: gray;">_____________________________________</p>
+      <h3 style="margin-left: 930px; margin-top: -780px; font-size: 25px; color: rgb(2, 104, 104);">Master of Naans</h3>
+      <p style="margin-left: 865px; font-size: 20px; color: rgb(1, 48, 48);">Tandoori Roti</p>
+      <p style="margin-left:1180px ; margin-top: -38px;">Rs.20</p>
+      <p style="margin-left: 850px; font-size: 20px; color: rgb(1, 48, 48);">Plain Naan</p>
+      <p style="margin-left:1180px ; margin-top: -38px;">Rs.20</p>
+      <p style="margin-left: 860px; font-size: 20px; color: rgb(1, 48, 48);">Butter Naan</p>
+      <p style="margin-left:1180px ; margin-top: -38px;">Rs.25</p>
+      <p style="margin-left: 860px; font-size: 20px; color: rgb(1, 48, 48);">Garlic Naan</p>
+      <p style="margin-left:1180px ; margin-top: -38px;">Rs.30</p>
+      <p style="margin-left: 866px; font-size: 20px; color: rgb(1, 48, 48);">Cheese Naan</p>
+      <p style="margin-left:1180px ; margin-top: -38px;">Rs.35</p>
+      <p style="margin-left: 900px; font-size: 20px; color: rgb(1, 48, 48);"> Chilli Cheese Naan</p>
+      <p style="margin-left:1180px ; margin-top: -38px;">Rs.35</p>
+      <p style="margin-left: 885px; font-size: 20px; color: rgb(1, 48, 48);">Peshwari Naan</p>
+      <p style="margin-left:1180px ; margin-top: -38px;">Rs.40</p>
+      <p style="margin-left: 870px; font-size: 20px; color: rgb(1, 48, 48);">Keema Naan</p>
+      <p style="margin-left:1180px ; margin-top: -38px;">Rs.40</p>
+      <p style="margin-left: 885px; font-size: 20px; color: rgb(1, 48, 48);">Lachha Partaha</p>
+      <p style="margin-left:1180px ; margin-top: -38px;">Rs.25</p>
+      <p><p style="margin-left: 980px;; color: gray;">___________________________________</p>
+      <h1 style="margin-top: 650px; text-align: center;" class="grill"> </h1>
+      <h1 class="stories">Caramel Stories<br> Indian Grills </h1>
+      <h4 style="margin-top: -1075px; font-size: 25px; margin-right: 960px; color:  rgb(8, 104, 4) ;">Veggie Classics</h3>
+      <p style="margin-right: 960px; font-size: 18px;">Paneer Tikka Masala </p>
+      <p style="margin-right: 660px; margin-top: -36px;">Rs.80</p>
+      <p style="margin-right: 965px; font-size: 18px;">Methi Malai Paneer</p>
+      <p style="margin-right: 660px; margin-top: -36px;">Rs.80</p>
+      <p style="margin-right: 1000px; font-size: 18px;">Mutter Paneer </p>
+      <p style="margin-right: 660px; margin-top: -36px;">Rs.80</p>
+      <p style="margin-right: 1060px; font-size: 18px;">Saao </p>
+      <p style="margin-right: 660px; margin-top: -36px;">Rs.80</p>
+      <p style="margin-right: 1015px; font-size: 18px;">Aloo Gobio </p>
+      <p style="margin-right: 660px; margin-top: -36px;">Rs.80</p>
+      <p style="margin-right: 1020px; font-size: 18px;">Daal Tadka </p>
+      <p style="margin-right: 660px; margin-top: -36px;">Rs.80</p>
+      <p style="margin-right: 974px; font-size: 18px;">Mixed Veg Curry </p>
+      <p style="margin-right: 660px; margin-top: -36px;">Rs.80</p>
+      <p style="margin-right: 1000px; font-size: 18px;">Chana Masala </p>
+      <p style="margin-right: 660px; margin-top: -36px;">Rs.80</p>
+      <p style="margin-right: 973px; font-size: 18px;">Mushroom Baltio </p>
+      <p style="margin-right: 660px; margin-top: -36px;">Rs.80</p>
+      <img src="{% static 'images/vegbiriyani.avif' %}" class="vegbiriyani">
+      <img src="{% static 'images/tandoori.avif' %}" class="tandoori">
+      <h4 style="margin-right: 950px; font-size: 25px; color: rgb(2, 104, 104)">Soft as a Pilau</h4>
+      <p style="margin-right: 1015px; font-size: 20px; color: rgb(1, 48, 48) ">Plain Rice</p>
+      <p style="margin-right: 1015px; font-size: 20px; color: rgb(1, 48, 48) ">Pilau Rice</p>
+      <p style="margin-right: 970px; font-size: 20px; color: rgb(1, 48, 48) ">Mushroom Rice</p>
+      <p style="margin-right: 1015px; font-size: 20px; color: rgb(1, 48, 48) ">Jeera Rice</p>
+      <p style="margin-right: 973px; font-size: 20px; color: rgb(1, 48, 48) ">Egg Fried  Rice</p>
+      <p style="margin-top: -20px; margin-right: 850px; color: grey;">_________________________________________</p>
+     <img src="{% static 'images/chips.avif' %}" class="chips">
+     <h4 style="font-size: 25px; margin-top: -750px; margin-right: 350px;  color: rgb(2, 104, 104)">Chips</h4>
+     <p style="font-size: 20px; margin-right: 372px;">Plain</p>
+     <p style="margin-top: -36px;">Rs.50</p>
+     <p style="font-size: 20px; margin-right: 360px;">Masala</p>
+     <p style="margin-top: -36px;">Rs.50</p>
+     <p style="font-size: 20px; margin-right: 360px;">Cheesy</p>
+     <p style="margin-top: -36px;">Rs.70</p>
+     <p style="margin-right: 155px; color: gray;">___________________________________</p>
+     <h4 style="font-size: 25px; margin-right: 280px; color:rgb(2, 104, 104) ;">Curry Sauce</h4>
+     <p style="font-size: 19px; margin-top: -16px; margin-right:320px;">Mild Curry</p>
+     <p style="margin-top: -35px;">Rs.50</p>
+     <p style="font-size: 19px; margin-top: -14px; margin-right:300px;">Madras Curry</p>
+     <p style="margin-top: -35px;">Rs.50</p>
+     <p style="font-size: 19px; margin-top: -14px; margin-right:310px;">Butter Curry</p>
+     <p style="margin-top: -35px;">Rs.50</p>
+     <p style="margin-right: 160px; color: gray;">___________________________________</p>
+     <h4 style="font-size: 25px; margin-right: 350px; color:rgb(2, 104, 104) ;">Kids</h4>
+     <p style="margin-top: -20px; font-size: 18px; margin-right: 220px;">Fish Fingers With Chips</p>
+     <p style="margin-right: 150px; color: gray;">______________________________________</p>
+      
+
+    </div>
+</body>
+</html>

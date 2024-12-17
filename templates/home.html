@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      ul{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        z-index: 1;
+        list-style-type: none;
+      }
+      ul li{
+        margin: 0 20px;
+        position: relative;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        transition: color 0.3s;
+      }
+      ul li{
+        position: relative;
+        
+      }
+      a:hover{
+        color: gray;
+      }
+      .welcome{
+        margin-top: -600px;
+        margin-left: 350px;
+        color: white;
+        
+      }
+      .book:hover{
+       color: rgb(236, 136, 4);
+      
+      }
+      
+     
+      
+    </style>
+</head>
+<body>
+  <ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'menu' %}">Menu</a></li>
+    <li><a href="{% url 'contact' %}">Contact</a></li>
+    <li><a href="{% url 'booking' %}">Booking</a></li>
+  </ul>
+  <h1 style="margin-top: -80px; margin-left: 50px; font-style: italic; font-size: 50px; color: rgb(1, 49, 49);">CARAMEL</h1>
+  
+  <img src="{% static 'images/cafe.avif' %}" style="width: 1330px; margin-top: -30px;">
+  <div class="welcome">
+    <p>WELCOME TO</p>
+    <h1 style="font-size: 50px;">Caramel Stories <br>Bar & Grill</h1>
+    <p style="font-size: 30px;">Caramel Stories Grill is Gornalwood's Latest Sports Bar.<br>
+    Bringing you a fusion of indian cuisine, mixed with a bar like<br>
+  atmosphere and showing all the live sports.</p>
+  </div>
+  <ul>
+    <li style="background-color: rgba(255, 255, 255, 0.356); width: 150px;height: 30px;text-align: center; padding: 10px;"><a href="{% url 'booking' %}" class="book">Booking</a></li>
+  </ul>
+
+
+</body>
+</html>
